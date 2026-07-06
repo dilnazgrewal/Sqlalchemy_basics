@@ -27,13 +27,26 @@ A beginner-friendly REST API built using **FastAPI**, **SQLAlchemy**, and **SQLi
 
 ```text
 .
-├── main.py
-├── database.py
-├── models.py
-├── schemas.py
-├── crud.py
+├── database/
+│   ├── school.db
+│   └── school2.db
+│
+├── learning_sqlalchemy/
+│   ├── sqlalchemy_basics.py
+│   ├── working_with_sqlalchemy.py
+│   ├── working_with_sqlite3.py
+│   ├── learning_relationships.py
+│   └── more_into_sqlalchemy.py
+│
+├── mini_database_app/
+│   ├── __init__.py
+│   ├── .gitignore
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   └── schemas.py
+│
 ├── requirements.txt
-├── .gitignore
 └── README.md
 ```
 
@@ -62,7 +75,7 @@ pip install -r requirements.txt
 Start the FastAPI server:
 
 ```bash
-uvicorn main:app --reload
+uvicorn mini_database_app.main:app --reload
 ```
 
 The API will be available at:
@@ -93,7 +106,7 @@ This project uses **SQLite** as the database and **SQLAlchemy** as the ORM.
 
 The database tables are created automatically when the application starts if they do not already exist.
 
-> **Note:** The SQLite database file is intentionally excluded from this repository using `.gitignore`.
+> **Note:** The SQLite database file is included in this repository for reference.
 
 ## 📚 Learning Objectives
 
